@@ -1,0 +1,130 @@
+<!-- 联系我们 -->
+    <section id="contact" class="py-20 bg-gray-50">
+        <div class="container mx-auto px-4 md:px-8">
+            <div class="text-center mb-16">
+            
+                <h2 class="text-[clamp(1.75rem,3vw,2.5rem)] font-bold text-dark mb-4">联系我们</h2>
+                <div class="w-20 h-1 bg-primary mx-auto"></div>
+                <p class="max-w-2xl mx-auto mt-6 text-gray-600">
+                    有任何问题或建议，欢迎随时联系我们，我们将竭诚为您服务。
+                </p>
+            </div>
+            
+            <div class="grid grid-cols-1 lg:grid-cols-3 gap-12">
+                <div class="lg:col-span-2">
+                    <div class="bg-white rounded-xl shadow-lg p-8">
+                        <h3 class="text-xl font-bold mb-6 text-dark">发送消息</h3>
+                        
+                        <form id="contactForm" class="space-y-6">
+                            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                                <div>
+                                    <label for="name" class="block text-sm font-medium text-gray-700 mb-1">姓名</label>
+                                    <input type="text" id="name" name="name" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-primary transition-colors" placeholder="请输入您的姓名" required>
+                                </div>
+                                <div>
+                                    <label for="email" class="block text-sm font-medium text-gray-700 mb-1">邮箱</label>
+                                    <input type="email" id="email" name="email" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-primary transition-colors" placeholder="请输入您的邮箱" required>
+                                </div>
+                            </div>
+                            
+                            <div>
+                                <label for="subject" class="block text-sm font-medium text-gray-700 mb-1">主题</label>
+                                <input type="text" id="subject" name="subject" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-primary transition-colors" placeholder="请输入消息主题" required>
+                            </div>
+                            
+                            <div>
+                                <label for="message" class="block text-sm font-medium text-gray-700 mb-1">消息内容</label>
+                                <textarea id="message" name="message" rows="5" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-primary transition-colors" placeholder="请输入您的消息内容" required></textarea>
+                            </div>
+                            
+                            <div>
+                                <button type="submit" class="bg-primary hover:bg-primary/90 text-white px-8 py-3 rounded-lg transition-all hover:shadow-lg transform hover:-translate-y-0.5 font-medium flex items-center">
+                                    发送消息 <i class="fa-solid fa-paper-plane ml-2"></i>
+                                </button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                
+                <div>
+                    <div class="bg-white rounded-xl shadow-lg p-8 mb-8">
+                        <h3 class="text-xl font-bold mb-6 text-dark">联系方式</h3>
+                        
+                        <div class="space-y-6">
+                            <div class="flex items-start">
+                                <div class="flex-shrink-0 h-10 w-10 rounded-full bg-primary/10 flex items-center justify-center">
+                                    <i class="fa-solid fa-map-marker-alt text-primary"></i>
+                                </div>
+                                <div class="ml-4">
+                                    <h4 class="text-lg font-medium text-gray-900">地址</h4>
+                                    <p class="text-gray-600">湖北省武汉市洪山区狮子山街1号</p>
+                                </div>
+                            </div>
+                            
+                            <div class="flex items-start">
+                                <div class="flex-shrink-0 h-10 w-10 rounded-full bg-primary/10 flex items-center justify-center">
+                                    <i class="fa-solid fa-phone text-primary"></i>
+                                </div>
+                                <div class="ml-4">
+                                    <h4 class="text-lg font-medium text-gray-900">电话</h4>
+                                    <p class="text-gray-600">+86 13263034235</p>
+                                </div>
+                            </div>
+                            
+                            <div class="flex items-start">
+                                <div class="flex-shrink-0 h-10 w-10 rounded-full bg-primary/10 flex items-center justify-center">
+                                    <i class="fa-solid fa-envelope text-primary"></i>
+                                </div>
+                                <div class="ml-4">
+                                    <h4 class="text-lg font-medium text-gray-900">邮箱</h4>
+                                    <p class="text-gray-600">info3583247040@qq.com</p>
+                                </div>
+                            </div>
+                            
+                            <div class="flex items-start">
+                                <div class="flex-shrink-0 h-10 w-10 rounded-full bg-primary/10 flex items-center justify-center">
+                                    <i class="fa-solid fa-clock text-primary"></i>
+                                </div>
+                                <div class="ml-4">
+                                    <h4 class="text-lg font-medium text-gray-900">工作时间</h4>
+                                    <p class="text-gray-600">周一至周日 9:00 - 18:00</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="bg-white rounded-xl shadow-lg p-8">
+                        <h3 class="text-xl font-bold mb-6 text-dark">关注我们</h3>
+                        
+                        <div class="flex space-x-4">
+                            <a href="#" class="h-12 w-12 rounded-full bg-[#07C160]/10 flex items-center justify-center text-[#07C160] hover:bg-[#07C160]/20 transition-colors">
+                                <i class="fa-brands fa-weixin text-xl"></i>
+                            </a>
+                            <a href="#" class="h-12 w-12 rounded-full bg-[#E6162D]/10 flex items-center justify-center text-[#E6162D] hover:bg-[#E6162D]/20 transition-colors">
+                                <i class="fa-brands fa-weibo text-xl"></i>
+                            </a>
+                            <a href="#" class="h-12 w-12 rounded-full bg-[#FE2C55]/10 flex items-center justify-center text-[#FE2C55] hover:bg-[#FE2C55]/20 transition-colors">
+                                <i class="fa-brands fa-tiktok text-xl"></i>
+                            </a>
+                            <a href="#" class="h-12 w-12 rounded-full bg-[#1877F2]/10 flex items-center justify-center text-[#1877F2] hover:bg-[#1877F2]/20 transition-colors">
+                                <i class="fa-brands fa-facebook text-xl"></i>
+                            </a>
+                            <a href="#" class="h-12 w-12 rounded-full bg-[#0A66C2]/10 flex items-center justify-center text-[#0A66C2] hover:bg-[#0A66C2]/20 transition-colors">
+                                <i class="fa-brands fa-instagram text-xl"></i>
+                            </a>
+                        </div>
+                        
+                        <div class="mt-6">
+                            <h4 class="text-lg font-medium text-gray-900 mb-3">订阅我们的新闻</h4>
+                            <div class="flex">
+                                <input type="email" class="flex-1 px-4 py-2 border border-gray-300 rounded-l-lg focus:ring-2 focus:ring-primary focus:border-primary transition-colors" placeholder="您的邮箱地址">
+                                <button class="bg-primary hover:bg-primary/90 text-white px-4 py-2 rounded-r-lg transition-colors">
+                                    订阅
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
