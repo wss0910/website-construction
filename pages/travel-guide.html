@@ -1,0 +1,260 @@
+ <!-- 旅游路线 -->
+    <section id="itinerary" class="py-20 bg-white">
+        <div class="container mx-auto px-4 md:px-8">
+            <div class="text-center mb-16">
+                
+                <h2 class="text-[clamp(1.75rem,3vw,2.5rem)] font-bold text-dark mb-4">旅游路线</h2>
+                <div class="w-20 h-1 bg-primary mx-auto"></div>
+                <p class="max-w-2xl mx-auto mt-6 text-gray-600">
+                    根据不同的兴趣和时间，我们为您精心设计了多条武汉旅游路线，带您深度体验江城魅力。
+                </p>
+            </div>
+          
+               <!DOCTYPE html>
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>武汉深度游路线推荐</title>
+    <style>
+        /* 全局样式 */
+        * {
+            font-family: "Microsoft YaHei", sans-serif;
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        /* 容器布局 */
+        .route-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 2rem;
+            padding: 2rem;
+            background: #f5f7fa;
+        }
+
+        /* 旅游卡片样式 */
+        .tour-route {
+            flex: 1;
+            min-width: 300px;
+            max-width: 450px;
+            background: white;
+            border-radius: 15px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+            overflow: hidden;
+            transition: transform 0.3s ease;
+        }
+
+        .tour-route:hover {
+            transform: translateY(-5px);
+        }
+
+        /* 卡片头部 */
+        .route-header {
+            position: relative;
+        }
+
+        .route-image {
+            width: 100%;
+            height: 240px;
+            object-fit: cover;
+        }
+
+        .route-tag {
+            position: absolute;
+            top: 12px;
+            padding: 4px 12px;
+            border-radius: 20px;
+            font-size: 0.8rem;
+            font-weight: bold;
+        }
+
+        .tag-history { background: #4CAF50; color: white; } /* 绿色标签 */
+        .tag-nature { background: #2196F3; color: white; } /* 蓝色标签 */
+        .tag-city { background: #FF9800; color: white; }   /* 橙色标签 */
+
+        .time-tag {
+            right: 12px;
+            background: rgba(255,255,255,0.9);
+            color: #333;
+            display: flex;
+            align-items: center;
+            gap: 4px;
+            padding: 4px 10px;
+        }
+
+        /* 卡片内容 */
+        .route-content {
+            padding: 1.5rem;
+        }
+
+        .route-title {
+            color: #333;
+            font-size: 1.2rem;
+            margin-bottom: 0.8rem;
+        }
+
+        .route-desc {
+            color: #666;
+            font-size: 0.9rem;
+            margin-bottom: 1.2rem;
+        }
+
+        .spot-list {
+            list-style: none;
+            padding-left: 1.5rem;
+        }
+
+        .spot-item {
+            margin-bottom: 1rem;
+            position: relative;
+        }
+
+        .spot-item::before {
+            content: attr(data-index);
+            position: absolute;
+            left: -1.5rem;
+            width: 24px;
+            height: 24px;
+            background: #e0f3ff; /* 浅色背景 */
+            color: #2196F3;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 0.8rem;
+        }
+
+        .spot-name {
+            color: #222;
+            font-size: 1rem;
+            margin-bottom: 0.3rem;
+        }
+
+        .spot-info {
+            color: #555;
+            font-size: 0.875rem;
+        }
+
+        /* 响应式设计 */
+        @media (max-width: 768px) {
+            .route-container {
+                flex-direction: column;
+                gap: 1.5rem;
+                padding: 1rem;
+            }
+        }
+    </style>
+    <!-- 字体图标库 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <div class="route-container">
+        
+        <!-- 第一条路线：历史文化之旅 -->
+        <div class="tour-route">
+            <div class="route-header">
+                <img src="images\shengbo.png" alt="历史文化之旅" class="route-image">
+                <span class="route-tag tag-history">历史文化</span>
+                <span class="time-tag">
+                    <i class="fas fa-clock"></i> 1日游
+                </span>
+            </div>
+            <div class="route-content">
+                <h2 class="route-title">荆楚文明探寻之旅</h2>
+                <p class="route-desc">从2400年前的曾侯乙编钟到万里长江第一桥，穿越武汉三千年建城史。</p>
+                
+                <ul class="spot-list">
+                    <li class="spot-item" data-index="1">
+                        <h3 class="spot-name">湖北省博物馆</h3>
+                        <p class="spot-info">打卡曾侯乙编钟、越王勾践剑，每日10:30/14:30有编钟演奏（需预约）</p>
+                    </li>
+                    <li class="spot-item" data-index="2">
+                        <h3 class="spot-name">黄鹤楼</h3>
+                        <p class="spot-info">登楼背诵《黄鹤楼记》可免门票，俯瞰长江与龟山电视塔同框</p>
+                    </li>
+                    <li class="spot-item" data-index="3">
+                        <h3 class="spot-name">武汉长江大桥</h3>
+                        <p class="spot-info">从汉阳桥头堡坐电梯到桥面（2元），傍晚看“橘子海”落日</p>
+                    </li>
+                    <li class="spot-item" data-index="4">
+                        <h3 class="spot-name">古德寺</h3>
+                        <p class="spot-info">汉传佛寺唯一阿难风格建筑，粉色墙垣适合拍复古大片</p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- 第二条路线：自然风光与文艺之旅 -->
+        <div class="tour-route">
+            <div class="route-header">
+                <img src="images\donghu.jpg" alt="自然风光之旅" class="route-image">
+                <span class="route-tag tag-nature">山水文艺</span>
+                <span class="time-tag">
+                    <i class="fas fa-clock"></i> 1日游
+                </span>
+            </div>
+            <div class="route-content">
+                <h2 class="route-title">东湖生态文艺漫游</h2>
+                <p class="route-desc">千亩湖光+百年老街，解锁武汉“慢生活”的两种打开方式。</p>
+                
+                <ul class="spot-list">
+                    <li class="spot-item" data-index="1">
+                        <h3 class="spot-name">东湖绿道</h3>
+                        <p class="spot-info">湖中道骑行（租自行车30元/天），打卡湖光阁和雁归桥</p>
+                    </li>
+                    <li class="spot-item" data-index="2">
+                        <h3 class="spot-name">湖北省美术馆</h3>
+                        <p class="spot-info">免费参观当代艺术展，馆内旋转楼梯是网红拍照点</p>
+                    </li>
+                    <li class="spot-item" data-index="3">
+                        <h3 class="spot-name">昙华林</h3>
+                        <p class="spot-info">避开主街去“雨巷”，老茶馆听一段湖北大鼓（15元/人）</p>
+                    </li>
+                    <li class="spot-item" data-index="4">
+                        <h3 class="spot-name">楚河汉街</h3>
+                        <p class="spot-info">夜晚灯光秀+杜莎夫人蜡像馆，逛汉派设计师买手店</p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- 第三条路线：城市风情之旅 -->
+        <div class="tour-route">
+            <div class="route-header">
+                <img src="images\jianghanguang.jpg" alt="城市风情之旅" class="route-image">
+                <span class="route-tag tag-city">都市烟火</span>
+                <span class="time-tag">
+                    <i class="fas fa-clock"></i> 1日游
+                </span>
+            </div>
+            <div class="route-content">
+                <h2 class="route-title">汉口百年租界漫步</h2>
+                <p class="route-desc">从百年江汉关到“过早”老巷，感受九省通衢的江湖气与洋派风情。</p>
+                
+                <ul class="spot-list">
+                    <li class="spot-item" data-index="1">
+                        <h3 class="spot-name">江汉关博物馆</h3>
+                        <p class="spot-info">免费参观武汉“海关史”，整点可听百年钟楼报时</p>
+                    </li>
+                    <li class="spot-item" data-index="2">
+                        <h3 class="spot-name">黎黄陂路街头博物馆</h3>
+                        <p class="spot-info">打卡“街头博物馆”铜牌，在老咖啡馆看梧桐落叶</p>
+                    </li>
+                    <li class="spot-item" data-index="3">
+                        <h3 class="spot-name">同兴里</h3>
+                        <p class="spot-info">跟着本地人买豆皮、糊汤粉，老竹床躺椅还原80年代生活</p>
+                    </li>
+                    <li class="spot-item" data-index="4">
+                        <h3 class="spot-name">知音号游轮</h3>
+                        <p class="spot-info">穿民国服饰登船，沉浸式体验《知音号》实景演出（19:30/21:00场次）</p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+    </div>
+</body>
+</html>
