@@ -1,0 +1,172 @@
+v
+ <!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>舌尖上的武汉 - 美食推荐</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <style>
+        .text-dark {
+            color: #333;
+        }
+        .bg-primary {
+            background-color: #4a6bdf;
+        }
+    </style>
+</head>
+<body>
+    <!-- 美食推荐 -->
+    <section id="food" class="py-20 bg-white">
+        <div class="container mx-auto px-4 md:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-[clamp(1.75rem,3vw,2.5rem)] font-bold text-dark mb-4">舌尖上的武汉</h2>
+                <div class="w-20 h-1 bg-primary mx-auto"></div>
+                <p class="max-w-2xl mx-auto mt-6 text-gray-600">
+                    武汉饮食文化历史悠久，具有独特的地方特色，融合了南北风味，是中国美食文化中的重要组成部分。从热干面到藕汤，从江城小吃到湖边夜市，武汉的美食如同这座城市一样热情奔放，充满了烟火气和人情味。
+                </p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+                <div>
+                    <h3 class="text-2xl font-bold mb-6 text-dark">当地风味餐厅</h3>
+                    
+                    <div class="space-y-6">
+                        <!-- 老宅藕香 -->
+                        <div class="flex gap-4 p-4 bg-gray-50 rounded-lg hover:shadow-md transition-shadow">
+                            <img src="/images/laozhaiouxiang.jpg" alt="老宅藕香" class="w-24 h-24 object-cover rounded-lg">
+                            <div>
+                                <h4 class="font-bold text-lg mb-1">老宅藕香（黄鹤楼景观店）</h4>
+                                <div class="flex items-center mb-2">
+                                    <span class="text-yellow-400 mr-1"><i class="fa-solid fa-star"></i></span>
+                                    <span class="text-gray-700 font-medium">4.8</span>
+                                </div>
+                                <p class="text-gray-600 text-sm">
+                                    餐厅历史逾35年，地道湖北菜取材于本土，黄鹤楼景观店可欣赏江景。推荐菜品：排骨藕汤、沔阳三蒸、武昌鱼。这里的藕汤炖得醇厚绵密，排骨软烂，汤汁浓郁，是武汉人待客的首选佳肴。
+                                </p>
+                            </div>
+                        </div>
+                        
+                        <!-- 融厨湖北菜 -->
+                        <div class="flex gap-4 p-4 bg-gray-50 rounded-lg hover:shadow-md transition-shadow">
+                            <img src="/images/rongchu.jpg" alt="融厨湖北菜" class="w-24 h-24 object-cover rounded-lg">
+                            <div>
+                                <h4 class="font-bold text-lg mb-1">融厨湖北菜（江汉路一店）</h4>
+                                <div class="flex items-center mb-2">
+                                    <span class="text-yellow-400 mr-1"><i class="fa-solid fa-star"></i></span>
+                                    <span class="text-gray-700 font-medium">4.7</span>
+                                </div>
+                                <p class="text-gray-600 text-sm">
+                                    创立十多年，排骨藕汤深受食客推荐，店内环境古色古香。招牌菜：过早热干面、鸭脖、豆皮。这家店的热干面不同于街头小吃，面条更有韧性，芝麻酱香气浓郁，配料丰富。
+                                </p>
+                            </div>
+                        </div>
+                        
+                        <!-- 肥肥虾庄 -->
+                        <div class="flex gap-4 p-4 bg-gray-50 rounded-lg hover:shadow-md transition-shadow">
+                            <img src="/images/feifeixiazhuang.jpg" alt="肥肥虾庄" class="w-24 h-24 object-cover rounded-lg">
+                            <div>
+                                <h4 class="font-bold text-lg mb-1">肥肥虾庄·金牌油焖大虾（石牌岭总店）</h4>
+                                <div class="flex items-center mb-2">
+                                    <span class="text-yellow-400 mr-1"><i class="fa-solid fa-star"></i></span>
+                                    <span class="text-gray-700 font-medium">4.6</span>
+                                </div>
+                                <p class="text-gray-600 text-sm">
+                                    餐馆风格炫酷个性，小龙虾肉质肥美，油焖大虾香辣可口。必尝菜品：油焖大虾、蒜蓉虾、清蒸武昌鱼。油焖大虾是这里的招牌，虾肉饱满，香辣味十足，汤汁拌面也非常美味。
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div>
+                    <h3 class="text-2xl font-bold mb-6 text-dark">特色小吃</h3>
+                    
+                    <div class="grid grid-cols-2 gap-4">
+                        <!-- 油饼包烧麦 -->
+                        <div class="bg-gray-50 rounded-lg overflow-hidden hover:shadow-md transition-shadow group">
+                            <div class="relative h-40 overflow-hidden">
+                                <img src="/images/youbingbaoshaomai.jpg" alt="油饼包烧麦" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110">
+                            </div>
+                            <div class="p-4">
+                                <h4 class="font-bold text-lg mb-1">家阳赵师傅油饼包烧麦（粮道街店）</h4>
+                                <div class="flex items-center mb-2">
+                                    <span class="text-yellow-400 mr-1"><i class="fa-solid fa-star"></i></span>
+                                    <span class="text-gray-700 font-medium">4.9</span>
+                                </div>
+                                <p class="text-gray-600 text-sm">
+                                    因肖战打卡而闻名，油饼酥脆，烧麦多汁，是武汉特色早餐。这里的油饼外皮酥脆，内部柔软，搭配鲜肉烧麦，一口下去既有油饼的酥香，又有烧麦的鲜美，是武汉人早餐的绝佳选择。
+                                </p>
+                            </div>
+                        </div>
+                        
+                        <!-- 严老幺烧麦 -->
+                        <div class="bg-gray-50 rounded-lg overflow-hidden hover:shadow-md transition-shadow group">
+                            <div class="relative h-40 overflow-hidden">
+                                <img src="/images/yanlaoyao.jpg" alt="严老幺烧麦" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110">
+                            </div>
+                            <div class="p-4">
+                                <h4 class="font-bold text-lg mb-1">严老幺烧麦（前进四路店）</h4>
+                                <div class="flex items-center mb-2">
+                                    <span class="text-yellow-400 mr-1"><i class="fa-solid fa-star"></i></span>
+                                    <span class="text-gray-700 font-medium">4.8</span>
+                                </div>
+                                <p class="text-gray-600 text-sm">
+                                    是《五哈》同款，三鲜豆皮值得一试，皮薄馅多，鲜香可口。严老幺烧麦皮薄馅大，鲜肉多汁，搭配特制的酱油和辣椒油，口感丰富，是武汉早点文化的代表之一。
+                                </p>
+                            </div>
+                        </div>
+                        
+                        <!-- 三镇民生甜食馆 -->
+                        <div class="bg-gray-50 rounded-lg overflow-hidden hover:shadow-md transition-shadow group">
+                            <div class="relative h-40 overflow-hidden">
+                                <img src="/images/sanzhenminshengtianshiguan.jpg" alt="三镇民生甜食馆" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110">
+                            </div>
+                            <div class="p-4">
+                                <h4 class="font-bold text-lg mb-1">三镇民生甜食馆（胜利街总店）</h4>
+                                <div class="flex items-center mb-2">
+                                    <span class="text-yellow-400 mr-1"><i class="fa-solid fa-star"></i></span>
+                                    <span class="text-gray-700 font-medium">4.7</span>
+                                </div>
+                                <p class="text-gray-600 text-sm">
+                                    江城小吃店代表之一，囊括众多武汉标志小吃。招牌甜品：糯米鸡、绿豆汤、藕汤。这里的糯米鸡香甜软糯，搭配特制的甜酱油，是武汉人下午茶的最爱。
+                                </p>
+                            </div>
+                        </div>
+                        
+                        <!-- 热干面 -->
+                        <div class="bg-gray-50 rounded-lg overflow-hidden hover:shadow-md transition-shadow group">
+                            <div class="relative h-40 overflow-hidden">
+                                <img src="/images/hotdrynoodles.jpg" alt="热干面" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110">
+                            </div>
+                            <div class="p-4">
+                                <h4 class="font-bold text-lg mb-1">蔡林记热干面（户部巷店）</h4>
+                                <div class="flex items-center mb-2">
+                                    <span class="text-yellow-400 mr-1"><i class="fa-solid fa-star"></i></span>
+                                    <span class="text-gray-700 font-medium">4.6</span>
+                                </div>
+                                <p class="text-gray-600 text-sm">
+                                    武汉人过早（吃早餐）的必备之选，面条筋道，芝麻酱香浓。正宗的武汉热干面，碱水面煮至八分熟，拌上浓郁的芝麻酱、酸豆角和萝卜丁，口感丰富，香气四溢，是武汉早餐文化的代表。
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 页脚 -->
+    <footer class="bg-dark text-white py-10">
+        <div class="container mx-auto px-4 md:px-8">
+            <div class="text-center">
+                <h3 class="text-2xl font-bold mb-4">舌尖上的武汉</h3>
+                <p class="mb-6">探索江城美食，感受武汉味道</p>
+                <p>&copy; 2023 舌尖上的武汉. 保留所有权利。</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
+    </section>
