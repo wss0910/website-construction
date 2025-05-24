@@ -109,9 +109,10 @@
  自定义字体：通过 Google Fonts 引入 Inter 字体（<link href="https://fonts.googleapis.com/css2?family=Inter">），并在 Tailwind 中配置为默认字体（font-inter类）。
  
 二、Tailwind CSS 框架的核心应用
+
 1. 响应式布局与断点
 
- 通过md:、lg:等断点类实现不同屏幕尺寸的布局切换：
+通过md:、lg:等断点类实现不同屏幕尺寸的布局切换：
 
 导航栏：桌面端（md:flex）显示水平菜单，移动端（md:hidden）隐藏并切换为折叠菜单。
 
@@ -125,7 +126,7 @@
 
 3. 颜色与主题配置
    
- 自定义颜色：在 Tailwind 配置中扩展primary（#165DFF）、secondary（#FF7D00）等颜色，并应用于文字、边框和背景（如text-primary、bg-secondary/90）。
+自定义颜色：在 Tailwind 配置中扩展primary（#165DFF）、secondary（#FF7D00）等颜色，并应用于文字、边框和背景（如text-primary、bg-secondary/90）。
 
 使用 CSS clamp 函数实现响应式字体大小，随屏幕宽度动态调整。
 
@@ -133,17 +134,17 @@
 
 导航链接使用border border-gray-200 rounded-lg hover:border-primary/50 hover:bg-primary/5，实现 Hover 时边框颜色变化和背景色半透明效果。
 
- 卡片交互：景点卡片使用hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2，Hover 时阴影变大、轻微上移，过渡动画持续 300ms。
+卡片交互：景点卡片使用hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2，Hover 时阴影变大、轻微上移，过渡动画持续 300ms。
  
 6. 自定义公用类（@layer utilities）
    
 在<style type="text/tailwindcss">中定义以下自定义样式：
 
- 文字阴影：.text-shadow和.text-shadow-lg，为标题和段落添加不同强度的阴影，提升立体感。
+文字阴影：.text-shadow和.text-shadow-lg，为标题和段落添加不同强度的阴影，提升立体感。
 
 浮动动画：.animate-float通过@keyframes float实现元素上下浮动动画，应用于英雄区标题。
 
- 滚动条隐藏：.scrollbar-hide通过::-webkit-scrollbar等属性隐藏浏览器滚动条，保持页面简洁。
+滚动条隐藏：.scrollbar-hide通过::-webkit-scrollbar等属性隐藏浏览器滚动条，保持页面简洁。
  
 三、CSS3 与视觉效果
 
@@ -153,7 +154,7 @@
 
  导航栏使用bg-white/90 backdrop-blur-md实现半透明白色背景和毛玻璃模糊效果，适配滚动时的视觉变化。
  
-3. 图片处理
+2. 图片处理
 
 图片使用object-cover属性确保在固定容器内完整显示，避免拉伸变形（如景点卡片图片h-64 object-cover）
 
