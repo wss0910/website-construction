@@ -96,10 +96,14 @@
 2. 语义化标签
 
 
- 头部导航：<header>包裹导航栏，<nav>定义导航区域，包含<a>链接和图标，结构清晰。
+ 头部导航：
+ 
+ <header>包裹导航栏，<nav>定义导航区域，包含<a>链接和图标，结构清晰。
  
  
- 内容分区：多个<section>标签划分不同板块（如武汉介绍、景点、美食等），每个板块通过id属性（如id="about"）实现锚点跳转。
+ 内容分区：
+ 
+ 多个<section>标签划分不同板块（如武汉介绍、景点、美食等），每个板块通过id属性（如id="about"）实现锚点跳转。
  
 
  页脚：<footer>标签包含版权信息和联系方式，符合语义化规范。
@@ -107,13 +111,19 @@
 4. 资源引入
 
    
- CSS 框架：通过<script src="https://cdn.tailwindcss.com"></script>加载 Tailwind CSS 核心文件。
+ CSS 框架：
+ 
+ 通过<script src="https://cdn.tailwindcss.com"></script>加载 Tailwind CSS 核心文件。
 
 
- 图标库：引入 Font Awesome 6.7.2 字体图标库（<linkhref="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">），用于导航栏、景点标签等图标（如fa-solid fa-map-marker-alt）。
+ 图标库：
+ 
+ 引入 Font Awesome 6.7.2 字体图标库（<linkhref="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">），用于导航栏、景点标签等图标（如fa-solid fa-map-marker-alt）。
 
 
- 自定义字体：通过 Google Fonts 引入 Inter 字体（<link href="https://fonts.googleapis.com/css2?family=Inter">），并在 Tailwind 中配置为默认字体（font-inter类）。
+ 自定义字体：
+ 
+ 通过 Google Fonts 引入 Inter 字体（<link href="https://fonts.googleapis.com/css2?family=Inter">），并在 Tailwind 中配置为默认字体（font-inter类）。
 
  
 二、Tailwind CSS 框架的核心应用
