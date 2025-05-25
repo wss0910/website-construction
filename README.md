@@ -8,9 +8,7 @@
 
 ## 任务分工：
 
-
 王杉杉：负责整体框架搭建和旅游路线
-
 
 秦子怡：文化板块
 
@@ -91,84 +89,125 @@
 
 1. 文档声明与元标签
 
+
 通过<meta charset="UTF-8">设置字符编码，<meta name="viewport" content="width=device-width, initial-scale=1.0">实现移动端适配。
+
 
 2. 语义化标签
 
+
  头部导航：<header>包裹导航栏，<nav>定义导航区域，包含<a>链接和图标，结构清晰。
+ 
  
  内容分区：多个<section>标签划分不同板块（如武汉介绍、景点、美食等），每个板块通过id属性（如id="about"）实现锚点跳转。
  
+
  页脚：<footer>标签包含版权信息和联系方式，符合语义化规范。
  
 4. 资源引入
+
+   
  CSS 框架：通过<script src="https://cdn.tailwindcss.com"></script>加载 Tailwind CSS 核心文件。
+
 
  图标库：引入 Font Awesome 6.7.2 字体图标库（<linkhref="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">），用于导航栏、景点标签等图标（如fa-solid fa-map-marker-alt）。
 
+
  自定义字体：通过 Google Fonts 引入 Inter 字体（<link href="https://fonts.googleapis.com/css2?family=Inter">），并在 Tailwind 中配置为默认字体（font-inter类）。
+
  
 二、Tailwind CSS 框架的核心应用
 
+
 1. 响应式布局与断点
+
 
 通过md:、lg:等断点类实现不同屏幕尺寸的布局切换：
 
+
 导航栏：桌面端（md:flex）显示水平菜单，移动端（md:hidden）隐藏并切换为折叠菜单。
+
 
 网格布局：景点板块使用grid-cols-1 md:grid-cols-2 lg:grid-cols-3，在小屏单栏显示，中屏双栏，大屏三栏。
 
+
 2. 容器与间距
+
 
 页面内容通过.container mx-auto类实现水平居中，内边距通过px-4 md:px-8（小屏 4px，中屏 8px）适配不同屏幕
 
+
 板块间距：py-20（上下内边距 20px）用于各<section>的垂直间距，gap-8控制网格卡片之间的间隙。
 
+
 3. 颜色与主题配置
+
    
 自定义颜色：在 Tailwind 配置中扩展primary（#165DFF）、secondary（#FF7D00）等颜色，并应用于文字、边框和背景（如text-primary、bg-secondary/90）。
 
+
 使用 CSS clamp 函数实现响应式字体大小，随屏幕宽度动态调整。
+
 
 5. 组件交互与动画
 
+
 导航链接使用border border-gray-200 rounded-lg hover:border-primary/50 hover:bg-primary/5，实现 Hover 时边框颜色变化和背景色半透明效果。
 
+
 卡片交互：景点卡片使用hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2，Hover 时阴影变大、轻微上移，过渡动画持续 300ms。
+
  
 6. 自定义公用类（@layer utilities）
+
    
 在<style type="text/tailwindcss">中定义以下自定义样式：
 
+
 文字阴影：.text-shadow和.text-shadow-lg，为标题和段落添加不同强度的阴影，提升立体感。
+
 
 浮动动画：.animate-float通过@keyframes float实现元素上下浮动动画，应用于英雄区标题。
 
+
 滚动条隐藏：.scrollbar-hide通过::-webkit-scrollbar等属性隐藏浏览器滚动条，保持页面简洁。
+
  
 三、CSS3 与视觉效果
 
+
 1. 背景与遮罩
+
    
 英雄区轮播图叠加bg-white/20（20% 透明度白色遮罩）和bg-gradient-to-t from-black/70 to-transparent（底部黑色渐变遮罩），增强文字可读性。
 
+
  导航栏使用bg-white/90 backdrop-blur-md实现半透明白色背景和毛玻璃模糊效果，适配滚动时的视觉变化。
+
  
 2. 图片处理
 
+
 图片使用object-cover属性确保在固定容器内完整显示，避免拉伸变形（如景点卡片图片h-64 object-cover）
+
 
 四、JavaScript 交互逻辑
 
+
 1. 导航栏滚动效果
+
    
 通过 JS 监听窗口滚动事件，当滚动距离超过 100px 时，为导航栏添加bg-white shadow-md类（白色背景 + 阴影），提升悬浮感；滚动距离不足时移除类，恢复透明背景。
 
+
 点击汉堡图标时，通过 JS 切换移动端菜单的hidden类，实现菜单展开 / 收起，并动态改变图标（fa-bars与fa-times切换）。
+
 
 所有锚点链接（如href="#about"）通过 JS 实现平滑滚动，滚动时自动调整偏移量（offsetTop - 80），避免被固定导航栏遮挡。
 
+
 总结
+
 
 该网页综合运用HTML 语义化、Tailwind CSS 响应式布局与自定义主题、CSS3 动画与视觉效果、JavaScript 交互逻辑及字体图标资源整合等知识点，实现了美观且功能完整的旅游攻略展示。
 
